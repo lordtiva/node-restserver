@@ -20,7 +20,7 @@ app.use( require('./routes/usuario'));
 
 // conección a DB
 
-mongoose.connect('mongodb://localhost/cafe', {
+mongoose.connect(process.env.URLDB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
